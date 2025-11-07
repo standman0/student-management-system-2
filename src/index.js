@@ -7,14 +7,13 @@ import "assets/styles/tailwind.css";
 
 // layouts
 
-import Admin from "layouts/Admin.js";
-import Auth from "layouts/Auth.js";
+import Admin from "./layouts/Admin.jsx";
+import Auth from "./layouts/Auth.jsx";
 
 // views without layouts
 
-import Landing from "views/Landing.js";
-import Profile from "views/Profile.js";
-import Index from "views/Index.js";
+// Keep only auth pages and admin layout; other views removed
+// (Landing, Profile, Index removed)
 
 ReactDOM.render(
   <BrowserRouter>
@@ -22,12 +21,10 @@ ReactDOM.render(
       {/* add routes with layouts */}
       <Route path="/admin" component={Admin} />
       <Route path="/auth" component={Auth} />
-      {/* add routes without layouts */}
-      <Route path="/landing" exact component={Landing} />
-      <Route path="/profile" exact component={Profile} />
-      <Route path="/" exact component={Index} />
-      {/* add redirect for first page */}
-      <Redirect from="*" to="/" />
+      {/* only admin and auth are available */}
+      {/* root -> auth login */}
+      <Redirect from="/" to="/auth/login" exact />
+      <Redirect from="*" to="/auth/login" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")

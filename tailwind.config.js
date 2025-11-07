@@ -9,6 +9,8 @@ module.exports = {
       "./public/*.html",
       "./src/**/*.js",
       "./src/*.js",
+      "./src/**/*.jsx",
+      "./src/*.jsx",
       "./src/**/*.html",
       "./src/*.html",
       "./public/**/*.js",
@@ -21,6 +23,7 @@ module.exports = {
   theme: {
     colors: {
       ...colors,
+      lightBlue: colors.sky, // Map lightBlue to sky to maintain compatibility
     },
     extend: {
       minHeight: {

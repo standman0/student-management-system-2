@@ -245,3 +245,5 @@ Instagram: <a href="https://www.instagram.com/creativetimofficial/" target="_bla
 - License Agreement: <a href="https://www.creative-tim.com/license?ref=nr-readme" target="_blank">https://www.creative-tim.com/license?ref=nr-readme</a>
 - Support: <a href="https://www.creative-tim.com/contact-us?ref=nr-readme" target="_blank">https://www.creative-tim.com/contact-us?ref=nr-readme</a>
 - Issues: <a href="https://github.com/creativetimofficial/notus-react/issues" target="_blank">Github Issues Page</a>
+#   s t u d e n t - m a n a g e m e n t - s y s t e m - 2  
+ 
